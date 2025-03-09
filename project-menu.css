@@ -1,0 +1,131 @@
+@font-face {font-family: "Apple Garamond"; src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot"); src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff") format("woff"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.svg#Apple Garamond") format("svg"); } 
+
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+
+    .prj-menu-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+        margin-left: 5vw;
+        transition: transform 0.25s;
+        will-change: transform;
+    }
+    
+    a{
+        padding-bottom: 2vh;
+        font-size: 36px;
+        font-family: 'Apple Garamond';
+        font-weight: 400;
+        letter-spacing: normal;
+        text-decoration: none;
+        color: black;
+        text-decoration-color: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 9px;
+        text-decoration-skip-ink: none;
+        text-underline-offset: -15%;
+        text-decoration-color: #00FF00;
+    }
+    
+    .arrow-container{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        background-color: white;
+        opacity: 100%;
+    }
+    
+    .arrow-container img{
+        transform: rotate(90deg);
+        margin-left: 3vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+@media(min-width: 325px){
+.prj-menu-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+    margin-left: 5vw;
+    transition: transform 0.25s;
+    will-change: transform;
+}
+
+a{
+    padding-bottom: 2vh;
+    font-size: 54px;
+    font-family: 'Apple Garamond';
+    font-weight: 400;
+    letter-spacing: normal;
+    text-decoration: none;
+    color: black;
+    text-decoration-color: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 9px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: -15%;
+    text-decoration-color: #00FF00;
+}
+
+.arrow-container{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    background-color: white;
+    opacity: 100%;
+}
+
+.arrow-container img{
+    transform: rotate(90deg);
+    margin-left: 3vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+}
+
+@media(min-width: 1000px){
+    a{
+        font-size: 81px;
+    }
+
+    .prj-menu-container{
+    margin-top: 20vh;
+    }
+
+    a:hover{
+        text-decoration-thickness: 15px;
+    }
+
+    
+}
+
+@media(min-width: 1600px){
+    a{
+        font-size: 81px;
+    }
+
+    a:hover{
+        text-decoration-thickness: 20px;
+    }
+
+    .prj-menu-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+        margin-left: 3vw;
+    }
+
+}

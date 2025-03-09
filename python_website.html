@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('//db.onlinewebfonts.com/c/e9c53ae71e1d09a3ec2ce3842d6c23c6?family=Apple+Garamond');
+@font-face {font-family: "Apple Garamond"; src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot"); src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff") format("woff"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.svg#Apple Garamond") format("svg"); } 
+
+    *, html{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+
+    
+    .arrow-container{
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100vw;
+            background-color: transparent;
+            opacity: 100%;
+        }
+
+        .arrow-container img{
+            transform: rotate(90deg);
+            margin-left: 3vw;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+    h1{
+        font-size: 81px;
+        text-align: center;
+        font-family: "Apple Garamond";
+        margin-bottom: 2vh;
+        margin-top: 10vh;
+    }
+
+    p{
+        font-size: 24px;
+        font-family: "Inter";
+        letter-spacing: -1px;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    .mega-img-container img{
+        width: 100%;
+    }
+
+    .covidata-container{
+        margin: 8vh 6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-p a{
+            transition: .1s;
+            font-family: 'Apple Garamond';
+            font-weight: 400;
+            letter-spacing: normal;
+            text-decoration: none;
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: #00FF00;
+            text-decoration-thickness: 9px;
+            text-decoration-skip-ink: none;
+            text-underline-offset: -15%;
+        }
+
+        .about-p a:hover{
+            transition: .3s;
+            background-color: #00FF00;
+        }
+
+        .up-arrow-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15vh 0vw;
+        }
+
+        .up-arrow-container img{
+            transform: rotate(135deg);
+        }
+
+
+    @media(min-width: 1250px){
+            .arrow-container img{
+                transform: rotate(90deg);
+                margin-left: 3vw;
+                margin-top: 2vh;
+                margin-bottom: 1vh;
+            }
+
+            .covidata-container{
+                margin: 10vh 20vw;
+            }
+
+            h1{
+                margin-bottom: 5vh;
+            }
+
+            p{
+                margin-bottom: 15vh;
+            }
+
+        }
+
+        @media(min-width: 1800px){
+
+            .covidata-container{
+                margin: 5vh 20vw;
+                justify-content: center;
+            }
+
+            h1{
+                margin-bottom: 5vh;
+                font-size: 121.5px;
+                margin-bottom: 7vh;
+            }
+
+            p{
+                margin-bottom: 15vh;
+                font-size: 36px;
+                width: 90%;
+                text-align: center;
+                margin-bottom: 20vh;
+            }
+
+        }
+
+
+</style>
+
+<body class = "animate-in">
+
+<div class="covidata-container">
+
+    <h1>Python</h1>
+    <p class = "about-p">(concept) Python is the most popular programming language in the world. The concept of python's website redesign doesn't add information to the <a href = "https://www.python.org/" target = "blank_">current website</a>, but shows them in a more friendly way, graphically and conceptually. The aim of this concept is to actually simplify the way information are represented because it can be confusing as a beginner. Here is the original presentation i did for <a href = "https://www.behance.net/ermagnifico?tracking_source=search_users_recommended%7Cnico%20bonora" target = "blank_">Behance</a>.</p>
+    <div class="mega-img-container">
+        <img src="COVID/python_website.svg" alt="Covid Data Website">
+    </div>
+</div>
+
+
+<div class="navbar-nuova">
+    <div class="nav-links-nuovi">
+        <a href="project-menu.html">
+            <div class="img-container-navbar-back">
+                <img src="IMAGES/ARROW.svg"home page">
+            </div>
+        </a>
+        <a href="index.html">
+            <div class="img-container-navbar">
+                <img src="LOGOS/nico_corsivo.svg" alt="home page">
+            </div>
+        </a>
+        <a href="#"></a>
+    </div>
+</div>
+
+<div class="up-arrow-container">
+    <a href="#"><img src="IMAGES/ARROW.svg" alt=""></a>
+</div>
+
+<script src = "transition.js"></script>
+<script src = "cursor.js"></script>
+
+</body>
+</html>

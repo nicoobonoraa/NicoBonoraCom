@@ -1,0 +1,1337 @@
+
+/*Grotesle Hp*/
+
+@font-face {
+    font-family: 'Groteske Hp';
+    src: url('FONTS/GroteskeHpBoldRegular.woff') format('woff2'),
+        url('FONTS/GroteskeHpBoldRegular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircledAlpha';
+    src: url('FONTS/CircledAlphaRegular.woff') format('woff2'),
+        url('FONTS/CircledAlphaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Groteske';
+    src: url('FONTS/GroteskeRegular.woff') format('woff2'),
+        url('FONTS/GroteskeRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transport';
+    src: url('FONTS/TransportRegular.woff') format('woff2'),
+        url('FONTS/TransportRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space';
+    src: url('FONTS/SpaceRegular.woff') format('woff2'),
+        url('FONTS/SpaceRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bear';
+    src: url('FONTS/BearRegularRegular.woff') format('woff2'),
+        url('FONTS/BearRegularRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root{
+    --24px: 1.250vw;
+    --yellow: #FBFF00;
+    --187px: 9.740vw;
+}
+
+*, html{
+    padding: 0;
+    margin: 0;
+    scroll-behavior:smooth;
+}
+
+n::-webkit-scrollbar {
+    width: 10px;
+}
+
+#transport{
+    display: none;
+}
+
+/*NAV*/
+
+.first-links{
+    display: none;
+}
+
+.font-list-grande{
+    display: none;
+}
+
+.big-logo-link{
+    display: none;
+}
+
+
+.back-button{
+    position: fixed;
+    z-index: 999;
+    top: 0%;
+    right: 0%;
+    right: 80px;
+    top: 25px;
+    font-family: "Groteske HP";
+    color: #F8FFE5;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+.back-button{
+    display: none;
+}
+
+.personal-portfolio-link{
+    display: none;
+}
+
+nav{
+    transition: .3s;
+    
+    top: 0%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 36px;
+    border-bottom: 3px solid #F8FFE5 ;
+}
+
+.menu-button{
+    font-family: "Groteske Hp";
+    color: #F8FFE5;
+    font-size: 24px;
+    text-decoration: none;
+    
+}
+
+.font-list-a-tendina{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.font-list-a-tendina{
+    transition: .3s;
+    opacity: 0%;
+}
+
+.menu-nascosto-links-fixed{
+    position: fixed;
+    /*left: 0%;*/
+    width: 100vw;
+    top: 0%;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.9);
+}
+
+.menu-nascosto-links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+    padding-left: 36px;
+}
+
+.menu-nascosto-links a{
+    padding-bottom: 2vh;
+    font-family: "Groteske HP";
+    color: #F8FFE5;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.menu-nascosto-links a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+}
+
+
+
+.display-class{
+    transition: .3s;
+    display: unset;
+}
+
+.undisplay-class{
+    transition: .3s;
+    display: none;
+}
+
+.disappear{
+    transition: .3s;
+    left: -150%;
+    opacity: 0%;
+}
+
+.appear{
+    transition: .2s;
+    left: 0%;
+    opacity: 100%;
+}
+
+
+
+/*cose generali*/
+
+.mega-container{
+    padding: 140px 36px 140px 36px;
+}
+
+.groteskehc-container{
+    padding-top: 450px;
+    background-color: transparent;
+}
+
+
+/*Background Image*/
+
+.background-image-container{
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+}
+
+.bg-img-container-interno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.bg-img-container-interno img{
+    object-fit: cover;
+    width: 100vw;
+}
+
+#big-gradient{
+    display: none;
+}
+
+/*Loading*/
+
+.loading-animation{
+    background-color: #F8FFE5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-loading-container{
+    width: 15%;
+    -webkit-animation: stratch 3s;
+    animation-iteration-count:infinite;
+}
+
+.img-loading-container img{
+    width: 100%;
+}
+
+@-webkit-keyframes stratch{
+    0% {
+        webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(6, 0.75, 1);
+    }
+
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(6, 8, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes stratchSmall{
+    0% {
+        webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(1, 1.2, 1);
+    }
+
+
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes music{
+    0%{
+        webkit-transform: rotate(1, 1, 1);
+        transform: rotate(0deg);
+    }
+
+    25%{
+        webkit-transform: rotate(1, 1, 1);
+        transform: rotate(20deg);
+    }
+
+    50%{
+        webkit-transform: rotate(1, 1, 1);
+        transform: rotate(0deg);
+    }
+
+    80%{
+        webkit-transform: rotate(1, 1, 1);
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        webkit-transform: rotate(1, 1, 1);
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes heart{
+    0%{
+        webkit-transform: scale(1, 1, 1);
+        transform: scale3d(1.1, 1.1, 1);
+    }
+
+    50%{
+        webkit-transform: rotate(1, 1, 1);
+        transform: scale3d(1.3, 1.3, 1);
+    }
+
+    100%{
+        webkit-transform: rotate(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+
+/*Groteske Hc*/
+
+h1{
+    padding-bottom: 39px;
+}
+
+p{
+    font-size: 24px;
+}
+
+.groteskehc-container h1{
+    font-family: 'Groteske Hp';
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    color: #F8FFE5;
+    line-height: 81px;
+    font-size: 81px;
+    padding-bottom: 39px;
+}
+
+.groteskehc-container p{
+    font-family: 'Groteske Hp';
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    color: #F8FFE5;
+    font-size: 24px;
+}
+
+.groteskehc-container a, p, h1, h2, h3, input{
+    font-family: 'Groteske Hp';
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    color: #F8FFE5;
+}
+
+.groteskehc-container input{
+    color: #F8FFE5;
+}
+
+.intro p{
+    padding-bottom: 91px;
+}
+
+input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.intro{
+    padding-bottom: 151px;
+}
+
+.an-underline{
+    height: 4px;
+    background-color: #F8FFE5;
+    margin-top: 10px;
+}
+
+.built-with h2{
+    font-size: 50px;
+    line-height: 45px;
+}
+
+.precision-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 199px;
+    padding: 18px 0px;
+    -webkit-animation: stratchSmall 1s;
+    animation-iteration-count:infinite;
+}
+
+
+.precision-img-container img{
+    width: 100%;
+}
+
+.h2-container{
+    display: flex;
+    align-items: center;
+    width: unset;
+}
+
+.h2-container h2{
+    padding-right: 10px;
+}
+
+.h2-container-img{
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-h2 img{
+    -webkit-animation: heart 1s;
+    animation-iteration-count:infinite;
+}
+
+.music-container img{
+    -webkit-animation: music 1s;
+    animation-iteration-count:infinite;
+}
+
+.h2-container-img img{
+    width: 100%;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.built-with{
+    padding-bottom: 140px;
+}
+
+.the-first-p{
+    padding-bottom: 42px;
+}
+
+.process-and-result{
+    padding-bottom: 140px;
+}
+
+.download-big-container h2{
+    padding-bottom: 39px;
+}
+
+.download-big-container{
+    padding-bottom: 140px;
+}
+
+.download-big-container a{
+    font-size: 24px;
+    padding: 10px;
+    border: 3px solid #F8FFE5;
+}
+
+.download-big-container a:hover{
+    transition: .3s;
+    font-size: 24px;
+    padding: 10px;
+    border: 3px solid #F8FFE5;
+    background-color: #F8FFE5;
+    color: #141824;
+    cursor: pointer;
+}
+
+
+/*Circled*/
+
+.circled-container{
+    background-color: transparent;
+}
+
+.circled-container p, h1, h3, a{
+    color: #F8FFE5;
+    font-family: "CircledAlpha";
+}
+
+.circled-container h2{
+    color: #F8FFE5;
+    font-family: "CircledAlpha";
+}
+
+.circled-container h1, h2{
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.circled-container input{
+    font-family: "CircledAlpha";
+    color: #F8FFE5;
+}
+
+.circled-container .an-underline{
+    background-color: #F8FFE5;
+    margin-top: 10px;
+}
+
+
+.try-it h2{
+    padding-bottom: 39px;
+}
+
+.try-it{
+    padding-bottom: 140px;
+}
+
+#type-something-title-circled{
+    font-size: 50px;
+}
+
+.an-underline-up{
+    margin-bottom: 20px;
+}
+
+.download-big-circled a{
+    transition: .3s;
+    border: 3px solid #F8FFE5;
+    text-decoration: none;
+}
+
+.download-big-circled a:hover{
+    transition: .3s;
+    border: 3px solid #F8FFE5;
+    background-color: #F8FFE5;
+    color: #F8FFE5;
+    text-decoration: none;
+    border-radius: unset;
+}
+
+
+/*Groteske*/
+
+.full-groteske-container{
+    background-color: transparent;
+}
+
+.full-groteske-container h1, h3, p{
+    font-family: "Groteske";
+    color: #F8FFE5;
+}
+
+.full-groteske-intro input{
+    font-family: "Groteske";
+    color: #F8FFE5;
+}
+
+.full-groteske-container h2{
+    font-family: "Groteske";
+    color: #F8FFE5;
+}
+
+.full-groteske-container a{
+    font-family: "Groteske";
+    color: #F8FFE5;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.full-groteske-intro h1{
+    font-size: 81px;
+    line-height: 81px;
+}
+
+
+.full-groteske-container .underline{
+    background-color: #F8FFE5;
+    height: 4px;
+    margin-top: 10px;
+}
+
+.full-groteske-container .download-big-container a{
+    font-size: 24px;
+    padding: 10px;
+    border: 3px solid #F8FFE5;
+}
+
+.full-groteske-container .download-big-container a:hover{
+    transition: .3s;
+    font-size: 24px;
+    padding: 10px;
+    border: 3px solid #F8FFE5;
+    background-color: #F8FFE5;
+    color: #F8FFE5;
+    cursor: pointer;
+}
+
+/*Space*/
+
+.full-space-container{
+    background-color: #F8FFE5;
+}
+
+.full-space-container h1{
+    color: #F8FFE5;
+    font-family: "Space";
+    font-size: 60px;
+    line-height: 40px;
+}
+
+.full-space-container h3{
+    color: #F8FFE5;
+    font-family: "Space";
+    font-size: 24px;
+    line-height: 15px;
+}
+
+.full-space-container a{
+    color: #F8FFE5;
+    font-family: "Space";
+    font-size: 24px;
+    line-height: 15px;
+}
+
+.full-space-container p{
+    color: #F8FFE5;
+    font-family: "Space";
+    font-size: 24px;
+    line-height: 15px;
+}
+
+.full-space-container h2{
+    color: #F8FFE5;
+    font-family: "Space";
+    font-size: 60px;
+    line-height: 40px;
+}
+
+.full-space-intro input{
+    font-family: "Space";
+    color: #F8FFE5;
+}
+
+.full-space-container .underline{
+    background-color: #FBFBFB;
+    height: 4px;
+    margin-top: 10px;
+}
+
+.full-space-container .download-big-container a{
+    font-size: 24px;
+    padding: 10px;
+    border: 3px solid #F8FFE5;
+}
+
+.full-space-container .download-big-container a:hover{
+    transition: .3s;
+    font-size: 24px;
+    padding: 10px;
+    border: 3px solid #F8FFE5;
+    background-color: #F8FFE5;
+    color: #F8FFE5;
+    cursor: pointer;
+}
+
+#download-bundle-container{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/*Bear*/
+
+.bear-container{
+    background-color: transparent;
+}
+
+.bear-container h1{
+    color: #F8FFE5;
+    font-family: "Bear";
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.bear-container h3{
+    color: #F8FFE5;
+    font-family: "Bear";
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.bear-container a{
+    color: #F8FFE5;
+    font-family: "Bear";
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.bear-container p{
+    color: #F8FFE5;
+    font-family: "Bear";
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.bear-container h2{
+    color: #F8FFE5;
+    font-family: "Bear";
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.bear-intro input{
+    font-family: "Bear";
+    color: #F8FFE5;
+}
+
+.bear-container .underline{
+    background-color: #F8FFE5;
+    height: 4px;
+    margin-top: 10px;
+}
+
+.bear-container .download-big-container a{
+    font-size: 16px;
+    padding: 10px;
+    border: 3px solid #F8FFE5;
+}
+
+.bear-container .download-big-container a:hover{
+    transition: .3s;
+    border: 3px solid #F8FFE5;
+    background-color: #F8FFE5;
+    color: #F8FFE5;
+    cursor: pointer;
+}
+
+.bear-container #download-bundle-container{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/*Transport*/
+
+.transport-container{
+    background-color: #05F140;
+}
+
+.transport-container h1{
+    color: #F8FFE5;
+    font-family: "Transport";
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.transport-container h3{
+    color: #F8FFE5;
+    font-family: "Transport";
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.transport-container a{
+    color: #F8FFE5;
+    font-family: "Transport";
+    font-size: 36px;
+    line-height: 25px;
+}
+
+.transport-container p{
+    color: #F8FFE5;
+    font-family: "Transport";
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.transport-container h2{
+    color: #F8FFE5;
+    font-family: "Transport";
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.transport-intro input{
+    font-family: "Transport";
+    color: #F8FFE5;
+
+}
+
+.transport-container .underline{
+    background-color: #FBFBFB;
+    height: 4px;
+    margin-top: 10px;
+}
+
+.transport-container .download-big-container a{
+    font-size: 24px;
+    padding: 10px;
+    border: 3px solid #F8FFE5;
+}
+
+.transport-container .download-big-container a:hover{
+    transition: .3s;
+    border: 3px solid #F8FFE5;
+    background-color: #FBFBFB;
+    color: #05F140;
+    cursor: pointer;
+}
+
+.transport-container #download-bundle-container{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+/*Tablet*/
+
+@media(min-width: 768px){
+
+
+    /*NAVBAR*/
+
+    .big-logo-link{
+        display: unset;
+    }
+
+    .small-logo-container{
+        display: none;
+    }
+
+    .link-logo-piccolo{
+        display: none;
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+    }
+
+    .logo-container img{
+        width: 100%;
+    }
+
+    .groteskehc-container h1{
+        line-height: 110px;
+        font-size: 125px;
+        padding-bottom: 39px;
+    }
+
+    .built-with h2{
+        font-size: 81px;
+        line-height: 69px;
+    }
+
+    .precision-img-container{
+        width: 300px;
+    }
+
+    .h2-container-img{
+        width: 40px;
+    }
+
+    
+    h2{
+        font-size: 81px;
+        line-height: 81px;
+    }
+
+
+    /*Circled*/
+
+    .circled-container h1, h2{
+        font-size: 81px;
+        line-height: 81px;
+    }
+
+    #type-something-title-circled{
+        font-size: 81px;
+    }
+
+
+    /*Groteske*/
+
+    .full-groteske-intro h1{
+        font-size: 125px;
+        line-height: 120px;
+    }
+
+    /*Space*/
+
+    .full-space-container h1{
+        font-size: 125px;
+        line-height: 80px;
+    }
+
+    .full-space-container h3{
+        font-size: 36px;
+        line-height: 25px;
+    }
+    
+    .full-space-container a{
+        font-size: 36px;
+        line-height: 25px;
+    }
+    
+    .full-space-container p{
+        font-size: 36px;
+        line-height: 25px;
+    }
+    
+    .full-space-container h2{
+        font-size: 81px;
+        line-height: 50px;
+    }
+
+    #download-bundle-container{
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+
+    /*Bear*/
+
+    .bear-container h1{
+        font-size: 54px;
+        line-height: 65px;
+    }
+
+    .bear-container h2{
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .bear-container #download-bundle-container{
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    
+
+}
+
+@media(min-width: 1200px){
+
+
+    /*Generali*/
+    #small-gradient{
+        display: none;
+    }
+
+    #big-gradient{
+        display: unset;
+    }
+
+    .bg-img-container-interno img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .mega-container{
+        padding: 220px 80px 220px 80px;
+    }
+
+    .menu-nascosto-links{
+        display: flex;
+        flex-direction: column;        
+        padding-left: 80px;
+    }
+
+    
+    .nav-links{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .groteskehc-container{
+        padding-top: 340px;
+    }
+
+    /*NAVBAR*/
+
+    .big-logo-link{
+        display: unset;
+    }
+
+    .small-logo-container{
+        display: none;
+    }
+
+    .link-logo-piccolo{
+        display: none;
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+    }
+
+    .logo-container img{
+        width: 100%;
+    }
+
+    /*Groteske*/
+
+    .groteskehc-container h1{
+        line-height: 100px;
+        font-size: 125px;
+        padding-bottom: 20px;
+    }
+
+    .built-with h2{
+        line-height: 100px;
+        font-size: 125px;
+    }
+
+    .precision-img-container{
+        width: 479px;
+    }
+
+    .h2-container-img{
+        width: 68px;
+    }
+
+    .process-and-result h2{
+        line-height: 100px;
+        font-size: 125px;
+        margin-bottom: 20px;
+    }
+
+    
+    h2{
+        line-height: 100px;
+        font-size: 125px;
+    }
+
+    .download-big-container h2{
+        line-height: 100px;
+        font-size: 125px;
+    }
+
+    .download-big-container a{
+        font-size: 54px;
+        padding: 10px;
+        border: 3px solid #F8FFE5;
+    }
+
+    .download-big-container h2{
+        padding-bottom: 59px;
+    }
+    
+    .download-big-container a:hover{
+        transition: .3s;
+        font-size: 54px;
+        padding: 10px;
+        border: 3px solid #F8FFE5;
+        background-color: #F8FFE5;
+        color: #F8FFE5;
+        cursor: pointer;
+    }
+
+    .intro{
+        padding-bottom: 210px;
+    }
+
+    .built-with{
+        padding-bottom: 210px;
+    }
+
+    .process-and-result{
+        padding-bottom: 210px;
+    }
+
+    .process-and-result p{
+        font-size: 36px;
+    }
+
+    .download-big-container{
+        padding-bottom: 210px;
+    }
+
+
+    /*Circled*/
+
+    .circled-container h1{
+        line-height: 120px;
+        font-size: 125px;
+    }
+
+    .circled-container .download-big-container h2{
+        line-height: 120px;
+        font-size: 125px;
+    }
+
+    .circled-container h2{
+        line-height: 120px;
+        font-size: 125px;
+    }
+
+    #type-something-title-circled{
+        line-height: 100px;
+        font-size: 125px;
+    }
+
+    .download-big-circled a{
+        transition: .3s;
+        border: 3px solid #2f2f22;
+        text-decoration: none;
+    }
+    
+    .download-big-circled a:hover{
+        transition: .3s;
+        border: 3px solid #F8FFE5;
+        background-color: #F8FFE5;
+        color: #F8FFE5;
+        text-decoration: none;
+        border-radius: unset;
+    }
+
+
+
+    /*Groteske*/
+
+    .full-groteske-intro h1{
+        line-height: 120px;
+        font-size: 125px;
+    }
+
+    .full-groteske-intro h2{
+        line-height: 120px;
+        font-size: 125px;
+    }
+
+    .full-groteske-container .download-big-container a{
+        font-size: 54px;
+        padding: 10px;
+        border: 3px solid #F8FFE5;
+        text-decoration: none;
+    }
+    
+    .full-groteske-container .download-big-container a:hover{
+        transition: .3s;
+        font-size: 54px;
+        padding: 10px;
+        border: 3px solid #F8FFE5;
+        background-color: #F8FFE5;
+        color: #F8FFE5;
+        cursor: pointer;
+    }
+
+
+
+    /*Space*/
+
+    .full-space-container h1{
+        line-height: 120px;
+        font-size: 187px;
+    }
+
+    .full-space-container h3{
+        font-size: 36px;
+        line-height: 25px;
+    }
+    
+    .full-space-container a{
+        font-size: 36px;
+        line-height: 25px;
+    }
+    
+    .full-space-container p{
+        font-size: 36px;
+        line-height: 25px;
+    }
+    
+    .full-space-container h2{
+        line-height: 120px;
+        font-size: 187px;
+    }
+
+    #download-bundle-container{
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .full-space-container .download-big-container a{
+        font-size: 54px;
+        padding: 10px;
+        border: 3px solid #F8FFE5;
+    }
+    
+    .full-space-container .download-big-container a:hover{
+        transition: .3s;
+        font-size: 54px;
+        padding: 10px;
+        border: 3px solid #F8FFE5;
+        background-color: #F8FFE5;
+        color: #2f2f22;
+        cursor: pointer;
+    }
+
+
+    /*Bear*/
+
+    .bear-container h1{
+        font-size: 81px;
+        line-height: 70px;
+    }
+
+    .bear-container h2{
+        font-size: 81px;
+        line-height: 70px;
+    }
+
+    .bear-container #download-bundle-container{
+        display: unset;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .bear-container .download-big-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bear-container .download-big-container a{
+        font-size: 36px;
+        padding: 10px;
+        border: 3px solid #F8FFE5;
+    }
+    
+    .bear-container .download-big-container a:hover{
+        transition: .3s;
+        border: 3px solid #F8FFE5;
+        background-color: #F8FFE5;
+        color: #FBFBFB;
+        cursor: pointer;
+    }
+
+    @media(min-width: 1800px){
+
+        .first-links{
+            display: unset;
+        }
+
+        .first-links a{
+            font-family: "Groteske Hp";
+            font-size: 24px;
+        }
+
+        .nav-links{
+            padding-right: 80px;
+            padding-left: 80px;
+        }
+    }
+
+    
+
+}
+
+.fading-7 {
+    background:
+      radial-gradient(farthest-side at bottom, #F8FFE5, transparent) 
+      bottom/calc(2*var(--d, 0%)) var(--d, 0) no-repeat;
+    transition: 0.5s;
+  }
+  .fading-7:hover {
+    --d: 50%;
+  }
+
+

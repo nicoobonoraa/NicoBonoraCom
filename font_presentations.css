@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('//db.onlinewebfonts.com/c/e9c53ae71e1d09a3ec2ce3842d6c23c6?family=Apple+Garamond');
+@font-face {font-family: "Apple Garamond"; src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot"); src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff") format("woff"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.svg#Apple Garamond") format("svg"); }
+
+
+*, html{
+    margin: 0;
+    padding: 0; 
+}
+
+.arrow-container{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    background-color: white;
+    opacity: 100%;
+}
+
+.arrow-container img{
+    transform: rotate(90deg);
+    margin-left: 3vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.description-container{
+    margin: 20vh 8vw;
+}
+
+.images-container img{
+    width: 100%;
+}
+
+h2, p, a{
+    font-family: "Inter";
+    font-size: 24px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: black;
+}
+
+.h2-container{
+    margin-bottom: 50px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+p{
+    margin-bottom: 21px;
+}
+
+.link-container a{
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+.link-container{
+    display: flex;
+    align-items: center;
+}
+
+.link-container img{
+    width: 20px;
+    padding-top: 0px;
+}
+
+#last-p{
+    margin-bottom: none;
+    margin-bottom: 39px;
+}
+
+.link-container a:hover{
+    opacity: .8;
+}
+
+@media(min-width: 1000px){
+    .description-container{
+        margin: 12vh 8vw 10vh 8vw;
+    }
+}
+
+@media(min-width: 1200px){
+    .description-container{
+        position: fixed;
+        background-color: white;
+        left: 0%;
+        margin: 0;
+        width: 20%;
+        padding: 5%;
+        padding-top: 20vh;
+        height: 100vh;
+    }
+
+    h2, a, p{
+        font-size: 16px;
+    }
+
+    #last-p{
+        margin-bottom: 25px;
+    }
+
+    .h2-container{
+        margin-bottom: 32px;
+    }
+
+    p{
+        margin-bottom: 15px;
+    }
+
+    .link-container img{
+        width: 12px;
+        padding-top: 3px;
+    }
+
+    .link-container a{
+        font-weight: bold;
+        padding-right: 5px;
+    }
+
+    .images-container{
+        width: 100%;
+        margin-left: 30vw;
+    }
+
+    .container-di-prova{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .giga-container{
+        margin: 0vh 7vw;
+    }
+
+}
+
+@media(min-width: 1800px){
+    h2, a, p{
+        font-size: 24px;
+    }
+
+    .giga-container{
+        margin: 0vh 7vw;
+    }
+
+    .description-container{
+        position: fixed;
+        background-color: white;
+        left: 0%;
+        margin: 0;
+        width: 20%;
+        padding: 0vh 0vw 0vh 7vw;
+        padding-top: 15vh;
+        height: 100vh;
+    }
+
+    #last-p{
+        margin-bottom: 39px;
+    }
+
+    .h2-container{
+        margin-bottom: 50px;
+    }
+
+    p{
+        margin-bottom: 21px;
+    }
+
+    .link-container img{
+        width: 18px;
+        padding-top: 3px;
+    }
+}

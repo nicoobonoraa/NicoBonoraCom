@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/apple-garamond');
+
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+
+.cursor{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #00FF00;
+    border-radius: 50%; 
+    pointer-events: auto;
+    z-index: 1;
+    backdrop-filter: grayscale();
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.mouse-down {
+    transition: .1s;
+    width: 40px;
+    height: 40px;
+}
+
+
+.big-home-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#first-div{
+    display: none;
+}
+
+.div{
+    height: 4px;
+    background-color: black;
+}
+
+.links-home-container a{
+    text-decoration: none;
+    font-size: 54px;
+    font-family: "Inter";
+    letter-spacing: -0.05em;
+    font-weight: bold;
+    color: black;
+    padding-left: 1vh;
+    display: block;
+    padding: 1vh;
+}
+
+a:hover{
+    transition: .2s;
+    background-color: #00FF00;
+}
+
+
+@media(min-width: 1300px){
+
+    .big-home-container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
+    .links-home-container a{
+        text-decoration: none;
+        font-size: 54px;
+    }
+
+    .div{
+        background-color: black;
+    }
+
+    #first-div{
+        display: block;
+    }
+
+    #last-div{
+        display: none;
+    }
+}

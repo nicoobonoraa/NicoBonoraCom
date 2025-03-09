@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Bonora's portfolio</title>
+    <style>
+
+    @font-face {font-family: "Apple Garamond"; src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot"); src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff") format("woff"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.svg#Apple Garamond") format("svg"); } 
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+        *, html{
+            margin: 0;
+            padding: 0;
+        }
+
+        .page-container{
+            height: 100vh;
+            background-color: #00FF00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1{
+            font-family: "Inter";
+            letter-spacing: -.4vw;
+            font-size:  6.328125vw;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <h1>Nico Bonora's portfolio</h1>
+    </div>
+    
+    <script>
+
+        const page = document.querySelector(".page-container")
+
+        setTimeout(function(){
+            page.style.transition = "1s"
+            page.style.opacity = "0%"
+        }, 3000);
+
+        setTimeout(function(){
+            window.location.href = 'index.html';
+        }, 4000);
+
+    </script>
+</body>
+</html>

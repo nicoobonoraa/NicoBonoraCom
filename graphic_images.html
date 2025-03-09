@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Projects</title>
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        *, html{
+            margin: 0;
+            padding: 0;
+        }
+
+        .arrow-container{
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100vw;
+            background-color: white;
+            opacity: 100%;
+        }
+
+        .arrow-container img{
+            transform: rotate(90deg);
+            margin-left: 3vw;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+        .mega-images-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10vh 3vw 0vh 3vw;
+        }
+
+        .img-container{
+            transition: .5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 1vh;
+            filter: grayscale(100%);
+        }
+        .img-container img{
+            width: 100%;
+        }
+
+        .img-container:hover{
+            transition: .5s;
+            filter: grayscale(0%);
+        }
+
+        @media(min-width: 1250px){
+            .arrow-container img{
+                transform: rotate(90deg);
+                margin-left: 3vw;
+                margin-top: 2vh;
+                margin-bottom: 1vh;
+            }
+
+            .mega-images-container{
+                margin: 15vh 20vw;
+            }
+
+            .img-container{
+                padding-bottom: 20vh;
+                font-size: 0%;
+            }
+        }
+
+        @media(min-width: 1800px){
+            .mega-images-container{
+                margin: 15vh 20vw;
+            }
+
+            .img-container{
+                padding-bottom: 20vh;
+                font-size: 0%;
+            }
+        }
+
+    </style>
+
+</head>
+<body class = "animate-in">
+    <div class="mega-images-container">
+        <div class="img-container">
+            <img src="GRAPHIC/dogdog.svg" alt="">
+        </div>
+        <div class="img-container">
+            <img src="GRAPHIC/DAFTWALLPAPER.svg" alt="">
+        </div>
+        <div class="img-container">
+            <img src="GRAPHIC/NIKE.svg" alt="">
+        </div>
+        <div class="img-container">
+            <img src="GRAPHIC/TRANSPORT_ART.svg" alt="">
+        </div>
+        <div class="img-container">
+            <img src="GRAPHIC/UNDESIGNER.svg" alt="">
+        </div>
+    </div>
+
+    <div class="navbar-nuova">
+        <div class="nav-links-nuovi">
+            <a href="project-menu.html">
+                <div class="img-container-navbar-back">
+                    <img src="IMAGES/ARROW.svg"home page">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="img-container-navbar">
+                    <img src="LOGOS/nico_corsivo.svg" alt="home page">
+                </div>
+            </a>
+            <a href="#"></a>
+        </div>
+    </div>
+
+    <script src = "transition.js"></script>
+    <script src = "cursor.js"></script>
+</body>
+</html>

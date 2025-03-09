@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="709" height="192.617" viewBox="0 0 709 192.617">
+  <g id="Group_5" data-name="Group 5" transform="translate(-140 -1894)">
+    <text id="precision" transform="translate(177.5 2058)" fill="#F8FFE5" font-size="187" font-family="GroteskeHpBoldRegular, Groteske Hp"><tspan x="0" y="0">precision</tspan></text>
+    <line id="Line_2" data-name="Line 2" x2="683.588" transform="translate(152.706 1896.5)" fill="none" stroke="#F8FFE5" stroke-width="5"/>
+    <line id="Line_3" data-name="Line 3" x2="683.588" transform="translate(152.706 2084.117)" fill="none" stroke="#F8FFE5" stroke-width="5"/>
+    <path id="Path_16" data-name="Path 16" d="M107,6567.057l-12.706-26.941-12.706,26.941Z" transform="translate(58.412 -4632.795)" fill="#F8FFE5"/>
+    <path id="Path_18" data-name="Path 18" d="M107,6567.057l-12.706-26.941-12.706,26.941Z" transform="translate(742 -4632.795)" fill="#F8FFE5"/>
+    <path id="Path_17" data-name="Path 17" d="M107,6741.47l-12.706,26.941L81.588,6741.47Z" transform="translate(58.412 -4695.115)" fill="#F8FFE5"/>
+    <path id="Path_19" data-name="Path 19" d="M107,6741.47l-12.706,26.941L81.588,6741.47Z" transform="translate(742 -4695.115)" fill="#F8FFE5"/>
+    <line id="Line_4" data-name="Line 4" y1="147.03" transform="translate(152.706 1916.793)" fill="none" stroke="#F8FFE5" stroke-miterlimit="10" stroke-width="5"/>
+    <line id="Line_5" data-name="Line 5" y1="147.03" transform="translate(836.294 1916.793)" fill="none" stroke="#F8FFE5" stroke-miterlimit="10" stroke-width="5"/>
+  </g>
+</svg>

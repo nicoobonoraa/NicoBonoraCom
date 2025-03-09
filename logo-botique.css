@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('//db.onlinewebfonts.com/c/e9c53ae71e1d09a3ec2ce3842d6c23c6?family=Apple+Garamond');
+@font-face {font-family: "Apple Garamond"; src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot"); src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff") format("woff"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.svg#Apple Garamond") format("svg"); } 
+
+
+*,html{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.logo-mega-container{
+    margin: 2vh 3vw 0vh 6vw;
+}
+
+.arrow-container{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    background-color: white;
+}
+
+.arrow-container img{
+    transform: rotate(90deg);
+    margin-left: 3vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.about-p{
+    margin: 15vh 0vw;
+    font-size: 24px;
+    font-family: "Inter";
+    letter-spacing: -1px;
+}
+
+.about-p a{
+    transition: .1s;
+    font-family: 'Apple Garamond';
+    font-weight: 400;
+    letter-spacing: normal;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #00FF00;
+    text-decoration-thickness: 9px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: -15%;
+}
+
+.about-p a:hover{
+    transition: .3s;
+    background-color: #00FF00;
+
+}
+
+.about-p a{
+    color: black;
+}
+
+.logo-collection-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-logo-container{
+    margin-bottom: 25vh;
+    width: 70vw;
+}
+
+.img-logo-container img{
+    width: 100%;
+    opacity: 80%;
+}
+.img-logo-container img:hover{
+    opacity: 100%;
+    transition: .2s;
+}
+
+@media(min-width: 900px){
+
+    .img-logo-container{
+        width: unset;
+    }
+
+    .mini-logo-container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20vh;
+    }
+
+    .logo-collection-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .img-logo-container{
+        margin-bottom: unset;
+    }
+
+    .about-p{
+        font-size: 30px;
+        width: 100%;
+        margin-top: 20vh;
+        text-align: center;
+    }
+}
+
+@media(min-width: 1100px){
+
+    .img-logo-container{
+        width: unset;
+    }
+
+    .logo-collection-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: unset;
+    }
+
+    .mini-logo-container{
+        flex-direction: row;
+        width: 100%;
+        justify-content: unset;
+        justify-content: space-between;
+        margin-bottom: 20vh;
+    }
+
+    .img-logo-container{
+        margin-bottom: unset;
+    }
+
+    .about-p{
+        margin-top: 20vh;
+        font-size: 30px;
+    }
+
+    .logo-collection-container{
+        display: unset;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-logo-container img{
+        width: 100%;
+    }
+}
+
+@media(min-width: 1200px){
+
+    .logo-mega-container{
+        display: flex;
+    }
+
+    .about-p{
+        order: 2;
+        width: 30%;
+        position: fixed;
+        right: 0;
+        margin-top: 35vh;
+        padding-right: 5vw;
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .mini-logo-container{
+        flex-direction: row;
+        width: 100%;
+        justify-content: unset;
+        justify-content: space-between;
+        margin-bottom: 20vh;
+    }
+
+    .img-logo-container img{
+        width: 80%;
+    }
+
+    .logo-collection-container{
+        margin-top: 18vh;
+    }
+
+    .arrow-container img{
+        transform: rotate(90deg);
+        margin-left: 3vw;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
+}
+
+@media(min-width: 1500px){
+    .img-logo-container img{
+        width: 90%;
+    }
+
+    .logo-collection-container{
+        width: 55%;
+    }
+}
+
+@media(min-width: 1800px){
+    .img-logo-container img{
+        width: 100%;
+    }
+
+    .logo-collection-container{
+        width: 50%;
+    }
+
+}

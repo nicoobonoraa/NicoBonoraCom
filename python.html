@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Logo</title>
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        @import url('//db.onlinewebfonts.com/c/e9c53ae71e1d09a3ec2ce3842d6c23c6?family=Apple+Garamond');
+        @font-face {font-family: "Apple Garamond"; src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot"); src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff") format("woff"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.svg#Apple Garamond") format("svg"); } 
+
+
+        *, html{
+            margin: 0;
+            padding: 0;
+        }
+        .arrow-container{
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100vw;
+            background-color: white;
+        }
+
+        .arrow-container img{
+            transform: rotate(90deg);
+            margin-left: 3vw;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+        .about-p{
+            font-size: 24px;
+            font-family: "Inter";
+            letter-spacing: -1px;
+        }
+
+        .about-p a{
+            transition: .1s;
+            font-family: 'Apple Garamond';
+            font-weight: 400;
+            letter-spacing: normal;
+            text-decoration: none;
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: #00FF00;
+            text-decoration-thickness: 9px;
+            text-decoration-skip-ink: none;
+            text-underline-offset: -15%;
+        }
+
+        .about-p a:hover{
+            transition: .3s;
+            background-color: #00FF00;
+        }
+
+        .each-logo-link-container a{
+            transition: .5s;
+            color: black;
+            font-family: "Inter";
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
+            letter-spacing: -1px;
+            padding-right: 1.5vw;
+        }
+
+        .logo-description{
+            position: fixed;
+            bottom: 0%;
+            padding: 0vh 5vw 6vh 5vw ;
+        }
+
+        .each-logo-link-container{
+            margin-top: 3vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img-container{
+            margin-top: 25vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-img-container img{
+            width: 85%;
+        }
+
+        #next-logo:hover{
+            transition: .5s;
+            padding-right: 4vw;
+        }
+
+
+
+
+        @media(min-width: 325px){
+
+        .arrow-container{
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100vw;
+            background-color: white;
+        }
+
+        .arrow-container img{
+            transform: rotate(90deg);
+            margin-left: 3vw;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+        .about-p{
+            font-size: 24px;
+            font-family: "Inter";
+            letter-spacing: -1px;
+        }
+
+        .about-p a{
+            transition: .1s;
+            font-family: 'Apple Garamond';
+            font-weight: 400;
+            letter-spacing: normal;
+            text-decoration: none;
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: #00FF00;
+            text-decoration-thickness: 9px;
+            text-decoration-skip-ink: none;
+            text-underline-offset: -15%;
+        }
+
+        .about-p a:hover{
+            transition: .3s;
+            background-color: #00FF00;
+        }
+
+        .each-logo-link-container a{
+            transition: .5s;
+            color: black;
+            font-family: "Inter";
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
+            letter-spacing: -1px;
+            padding-right: 1.5vw;
+        }
+
+        .logo-description{
+            position: fixed;
+            bottom: 0%;
+            padding: 0vh 5vw 6vh 5vw ;
+        }
+
+        .each-logo-link-container{
+            margin-top: 3vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img-container{
+            margin-top: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-img-container img{
+            width: 85%;
+        }
+
+        #next-logo:hover{
+            transition: .5s;
+            padding-right: 4vw;
+        }
+
+        }
+
+        @media(min-width: 700px){
+            .about-p, .about-p a, .each-logo-link-container a{
+                font-size: 36px;
+            }
+
+            .logo-img-container{
+                margin-top: 33vh;
+            }
+        }
+
+        @media(min-width: 900px){
+            .about-p, .about-p a, .each-logo-link-container a{
+                font-size: 36px;
+            }
+
+            .each-logo-link-container img{
+                width: 3%;
+            }
+
+            .logo-img-container{
+                margin-top: 35vh;
+            }
+        }
+
+        @media(min-width: 1250px){
+
+            .about-p, .about-p a, .each-logo-link-container a{
+                font-size: 24px;
+            }
+
+            .logo-description{
+            position: fixed;
+            width: 30%;
+            right: 0%;
+            top: 35%;
+            padding: 0vh 5vw 6vh 5vw ;
+            padding: unset;
+            padding-right: 7vw;
+            }
+
+            .logo-img-container{
+                margin-top: 40vh;
+                display: flex;
+                align-items: center;
+                justify-content: unset;
+                padding-left: 7vw;
+            }
+
+            .each-logo-link-container a{
+                padding-right: .7vw;
+            }
+
+            .logo-img-container img{
+                width: 35%;
+            }
+
+            .arrow-container img{
+                transform: rotate(90deg);
+                margin-left: 3vw;
+                margin-top: 2vh;
+                margin-bottom: 1vh;
+            }
+
+            .each-logo-link-container img{
+                padding-top: .5vh;
+                width: 4%;
+            }
+
+            @media(min-width: 1800px){
+                .logo-description{
+                    top: 40%;
+                    width: 27%;
+                }
+
+                .each-logo-link-container a{
+                    padding-right: .5vw;
+                }
+
+                .logo-img-container{
+                    padding-left: 15vw;
+                    margin-top: 43vh;
+                }
+
+            }
+
+        }
+
+    </style>
+    
+</head>
+<body class = "animate-in">
+    <div class="logo-img-container-wrapper">
+        <div class="logo-img-container">
+            <img src="LOGOS/Python.svg" style = "opacity: 90%;" alt="Logo Yuto Horigome">
+        </div>
+    </div>
+
+    <div class="logo-description">
+        <div class="about-p">
+            This concept is part of a bigger project which was about redesigning <a href = "python_website.html">python.org identity</a> (just as a personal challenge). You can find more about the challenge <a href = "python_website.html">here</a>.
+        </div>
+        <div class="each-logo-link-container">
+            <a id = "next-logo" href="happy.html">Next Logo</a>
+            <img id = "next-logo-arrow" src="LOGOS/RIGHT_ARROW.svg" alt="go to next logo">
+        </div>
+    </div>
+
+
+    <div class="navbar-nuova">
+        <div class="nav-links-nuovi">
+            <a href="logo-botique.html">
+                <div class="img-container-navbar-back">
+                    <img src="IMAGES/ARROW.svg"home page">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="img-container-navbar">
+                    <img src="LOGOS/nico_corsivo.svg" alt="home page">
+                </div>
+            </a>
+            <a href="#"></a>
+        </div>
+    </div>
+
+    <script src = "cursor.js"></script>
+    <script src = "transition.js"></script>
+</body>
+</html>

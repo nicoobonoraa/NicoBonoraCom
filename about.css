@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('//db.onlinewebfonts.com/c/e9c53ae71e1d09a3ec2ce3842d6c23c6?family=Apple+Garamond');
+@font-face {font-family: "Apple Garamond"; src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot"); src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff") format("woff"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.svg#Apple Garamond") format("svg"); } 
+
+
+*,html{
+    margin: 0;
+    padding: 0;
+}
+
+
+.cursor{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #00FF00;
+    border-radius: 50%; 
+    pointer-events: auto;
+    z-index: 1;
+    backdrop-filter: grayscale();
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.mouse-down {
+    transition: .1s;
+    width: 40px;
+    height: 40px;
+}
+
+.about-p{
+    font-size: 24px;
+    font-family: "Inter";
+    letter-spacing: -1px;
+}
+
+.about-p a{
+    transition: .1s;
+    font-family: 'Apple Garamond';
+    font-weight: 400;
+
+    letter-spacing: normal;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #00FF00;
+    text-decoration-thickness: 9px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: -15%;
+}
+
+.about-p a:hover{
+    transition: .3s;
+    background-color: #00FF00;
+
+}
+
+.arrow-container{
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0% 5%;
+}
+
+.about-p{
+    margin-top: 20vh;
+}
+
+@media(min-width: 700px){
+    .about-p{
+        font-size: 36px;
+    }
+}
+
+
+@media(min-width: 1300px){
+
+    
+    body{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        padding: 0% 5%;
+    }
+
+    .about-p{
+
+        margin-top: unset;
+        font-size: 36px;
+        font-family: "Inter";
+        letter-spacing: -3px;
+    }
+
+    .about-p a{
+        text-decoration-thickness: 12px;
+    }
+}
+
+
+@media(min-width: 1800px){
+    .about-p{
+        font-size: 54px;
+        font-family: "Inter";
+        letter-spacing: -3px;
+        width: 80%;
+    }
+
+    .about-p a{
+        text-decoration-thickness: 20px;
+    }
+}
+
+
+
+
+
+
+
+

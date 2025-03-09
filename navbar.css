@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('//db.onlinewebfonts.com/c/e9c53ae71e1d09a3ec2ce3842d6c23c6?family=Apple+Garamond');
+@font-face {font-family: "Apple Garamond"; src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot"); src: url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.woff") format("woff"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e9c53ae71e1d09a3ec2ce3842d6c23c6.svg#Apple Garamond") format("svg"); } 
+
+html, *{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nuova{
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    top:2%;
+    transition: .5s;
+    text-shadow: 10%;
+}
+
+.nav-links-nuovi{
+    display: flex;
+    align-items: center;
+    padding: 0vh 2vw;
+    justify-content: center;
+}
+
+.nav-links-nuovi a{
+    font-size: 16px;
+    color: #000;
+    font-family: "Inter";
+    letter-spacing: -0.1px;
+    font-weight: bold;
+    text-decoration: none;
+    mix-blend-mode: difference;
+}
+
+.nav-links-nuovi a:hover{
+    opacity: 0.8;
+}
+
+.img-container-navbar{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.img-container-navbar img{
+    transition: .3s;
+    width: 100%;
+    filter: grayscale(100%)
+}
+
+.img-container-navbar img:hover{
+    opacity: 1;
+    filter: grayscale(0%);
+    transition: .3s;
+}
+
+.img-container-navbar-back{
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    mix-blend-mode:darken;
+}
+
+.img-container-navbar-back img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
